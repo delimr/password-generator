@@ -78,7 +78,7 @@ function writePassword() {
       case "special and numeric": case "special, numeric":
         random = "0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
         break;
-        //everything 
+//everything 
       case "lowercase, uppercase, numeric, special": case "lowercase and uppercase and numeric and special": case "everything":
         random = "0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
         break;
