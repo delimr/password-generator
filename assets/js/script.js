@@ -37,4 +37,44 @@ function writePassword() {
       case "special":
         random = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
         break;
-      
+      //if select 2 types giving the option of and or ","
+      //lowercase and something
+      case "lowercase and uppercase": case "lowercase, uppercase":
+        random = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        break;
+      case "lowercase and numeric": case "lowercase, numeric": 
+        random = "abcdefghijklmnopqrstuvwxyz0123456789"
+        break;
+      case "lowercase and special": case "lowercase, special":
+        random = "abcdefghijklmnopqrstuvwxyz !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+        break;
+      //uppercase and something
+      case "uppercase and lowercase": case "uppercase, lowercase":
+        random = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        break;
+      case "uppercase and numeric": case "uppercase, numeric":
+        random = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        break;
+      case "uppercase and special": case "uppercase, special": 
+        random = "ABCDEFGHIJKLMNOPQRSTUVWXYZ !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+        break;
+      //numeric and something
+      case "numeric and lowercase": case "numeric, lowercase":
+        random = "0123456789abcdefghijklmnopqrstuvwxyz"
+        break;
+      case "numeric and uppercase": case "numeric, uppercase":
+        random = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        break;
+      case "numeric and special": case "numeric, special":
+        random = "0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+        break;
+      //special and something
+      case "special and lowercase": case "special, lowercase":
+        random = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~abcdefghijklmnopqrstuvwxyz"
+        break;
+      case "special and uppercase": case "special, uppercase":
+        random = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        break;
+      case "special and numeric": case "special, numeric":
+        random = "0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+        break;
