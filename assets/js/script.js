@@ -19,4 +19,22 @@ function writePassword() {
     var random = "";
     var characters = type.toLowerCase();
  
-   
+    switch(characters){
+      //if select only one type
+      //if select lowercase
+      case "lowercase":
+        random = "abcdefghijklmnopqrstuvwxyz"
+        break;
+      //if select uppercase
+      case "uppercase":
+        random = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        break;
+      //if select numeric
+      case "numeric":
+        random = "0123456789"
+        break;
+      //if select special
+      case "special":
+        random = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+        break;
+      
