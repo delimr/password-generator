@@ -88,3 +88,15 @@ function writePassword() {
         }
 
  
+//return
+var passwd = "";
+for (var i = 0; i < parseInt(long); i++) {
+// "+=" added concatenate string  
+passwd += random.charAt(Math.floor(Math.random() * random.length));
+}
+return passwd;
+}
+}
+ 
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
