@@ -97,6 +97,5 @@ passwd += random.charAt(Math.floor(Math.random() * random.length));
 return passwd;
 }
 }
- 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
