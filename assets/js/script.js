@@ -13,3 +13,10 @@ function writePassword() {
   passwordText.value = password;
  
  
+//generates function password
+  function generatePassword() {
+//information provided by cx
+    var random = "";
+    var characters = type.toLowerCase();
+ 
+   
